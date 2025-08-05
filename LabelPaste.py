@@ -45,7 +45,11 @@ def insert_labels_pdf(qr_folder, labels, output_pdf="AveryLabels.pdf"):
         x = LEFT_MARGIN + col * (LABEL_WIDTH + H_GAP)
         y = PAGE_HEIGHT - TOP_MARGIN - LABEL_HEIGHT - row * (LABEL_HEIGHT + V_GAP)
 
-        qr_path = os.path.join(qr_folder, qr_filename)
+        if (qr_filename is None) or (qr_filename == ""):
+            qr_path = None
+        else:
+            qr_path = os.path.join(qr_folder, qr_filename)
+            
         draw_label(c, x, y, qr_path, label_lines)
 
         # After every 30 labels, start a new page

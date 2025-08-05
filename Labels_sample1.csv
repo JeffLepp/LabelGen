@@ -1,5 +1,5 @@
-H,H,H,Q,Q,Q
-Exp,Location,Variety,Rep,Designation,Pesticide_App
+H,H,H,H/Q,Q,H
+Exp,Loc,Variety,Rep,Number,Pesticide_App
 AMEN,Lind2024,BORDER,NA,0,Y
 AMEN,Lind2024,MN106-FR,1,1,N
 AMEN,Lind2024,ISU-86,1,2,N
