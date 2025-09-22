@@ -1,6 +1,6 @@
 LabelGen – Avery 5160 QR Label Generator  
 Written by Jefferson Kline  
-For assistance or free software requests: jefferson.kline@wsu.edu  
+Written for: Vogel Plant Pathology - Dr. Wilson Craine & Team 
 
 
 ## Before running
