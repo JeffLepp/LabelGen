@@ -2,6 +2,8 @@ LabelGen – Avery 5160 QR Label Generator
 Written by Jefferson Kline  
 Written for: Vogel Plant Pathology - Dr. Wilson Craine & Team 
 
+For Detailed Instructions and Demo's Visit: https://sites.google.com/view/label-kline/home
+You can also download an excecutable of this program if you prefer an easier interface than the console
 
 ## Before running
 
@@ -9,20 +11,19 @@ This program generates print-ready Avery 5160 label PDFs from a formatted CSV fi
 Each label will display a QR code on the left and up to 5 short text lines on the right.
 
 Make sure:
-    1. You are on a Windows machine (preferred).
+    1. You are on a Windows machine.
     2. You have a Labels.csv file ready in the proper format.
     3. Each label line (text) should be no more than 31 characters.
 
-
 ## How to run
 
-1: Open a command prompt in the same folder as LabelGen.exe
+1: Open a command prompt in the same folder as root dir of this program
 
 2: Run the tool with:
-       LabelGen.exe path_to_your_csv
+       python LabelGen.py path_to_your_csv
 
    Example:
-       LabelGen.exe "C:/Users/you/Desktop/Labels.csv"
+       python3 LabelGen.py "C:/Users/you/Desktop/Labels.csv"
 
 3: Your QR-coded label PDF will be created in the same folder as LabelGen.exe
 

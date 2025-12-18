@@ -27,6 +27,7 @@ def main(csv_path):
 # Read file (change suffix to '.xlsx' if needed)
     path = Path(csv_path).resolve()
 
+    # Here are some general checks for input given
     if not path.exists():
         raise FileNotFoundError(f"File {path} does not exist.")
 
@@ -88,7 +89,7 @@ def main(csv_path):
     excel_data.columns = excel_headers  # Rename columns using actual excel_headers
     excel_flags.index = excel_headers   # Align excel_flags to excel_headers
 
-    # Split fields
+    # Split fields (what will be on label vs QR or both!)
     human_cols = [col for i, col, flag in flag_tuples if flag in ("H", "H/Q")]
     qr_cols    = [col for i, col, flag in flag_tuples if flag in ("Q", "H/Q")]
 
@@ -151,7 +152,7 @@ def get_excel_file():
 
 
 if __name__ == "__main__":
-    print("Welcome to LabelGen! Contact jefferson.kline@wsu.edu for assistance or code requests for your lab (free).")
+    print("Welcome to LabelGen!")
 
     try:
         if len(sys.argv) >= 2:
